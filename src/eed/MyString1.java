@@ -9,9 +9,10 @@ public class MyString1 {
 	// Se ha cambiado para que no cuente los espacios como palabras 
 	public static int contarPalabras(String str) {
 	    if (str == null || str.trim().isEmpty()) {
+	    	
 	        return 0;
 	    }
-	    String[] palabras = str.trim().split(" ");
+	    String[] palabras = str.trim().split("\\\\s+");
 	    return palabras.length;
 	}
 
